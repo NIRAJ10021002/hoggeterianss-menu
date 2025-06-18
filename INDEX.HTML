@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Hoggeterians | Welcome</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Lato&display=swap" rel="stylesheet" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #f4f4f4;
+      font-family: 'Lato', sans-serif;
+    }
+    header {
+      background: linear-gradient(120deg, #4b2e2e, #6d4c41);
+      color: white;
+      padding: 60px 20px 40px;
+      text-align: center;
+      animation: glow 3s ease-in-out infinite alternate;
+    }
+    @keyframes glow {
+      from { box-shadow: 0 0 10px #fff; }
+      to   { box-shadow: 0 0 25px #ffd700; }
+    }
+    header h1 {
+      font-family: 'Cinzel Decorative', cursive;
+      font-size: 48px;
+      letter-spacing: 2px;
+    }
+    header p { font-size: 15px; margin: 6px 0; }
+
+    .menu-section {
+      padding: 30px 20px;
+      text-align: center;
+    }
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 16px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .card {
+      position: relative;
+      background: #333 center/cover no-repeat;
+      border-radius: 16px;
+      padding: 60px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      color: white;
+      text-decoration: none;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      font-family: 'Cinzel Decorative', serif;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+      user-select: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.4);
+      border-radius: 16px;
+      z-index: 0;
+    }
+    .card span {
+      position: relative;
+      z-index: 1;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+    }
+    footer {
+      background: #4b2e2e;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      font-family: 'Cinzel Decorative', serif;
+    }
+    footer h2 { font-size: 22px; margin-bottom: 10px; }
+    footer p {
+      font-size: 14px;
+      max-width: 700px;
+      margin: auto;
+      line-height: 1.6;
+    }
+    @media (max-width: 480px) {
+      header h1 { font-size: 34px; }
+      .card { font-size: 14px; padding: 50px 16px; }
+      footer h2 { font-size: 18px; }
+      footer p { font-size: 13px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>HOGGETERIANS</h1>
+  <p>NO MORE HOGGING FOR FOOD.</p>
+  <p>Time: 07:30 PM to 04:00 AM</p>
+  <p>Contact: 999896888</p>
+</header>
+
+<div class="menu-section">
+  <div class="card-container">
+
+    <a class="card" href="starters.html" style="background-image:url('https://cdn.pixabay.com/photo/2017/04/08/18/30/salad-2211432_1280.jpg');">
+      <span>STARTERS</span>
+    </a>
+
+    <a class="card" href="continental.html" style="background-image:url('https://cdn.pixabay.com/photo/2016/11/18/16/21/risotto-1835443_1280.jpg');">
+      <span>CONTINENTAL</span>
+    </a>
+
+    <a class="card" href="main_meal.html" style="background-image:url('https://cdn.pixabay.com/photo/2021/11/02/20/30/thali-6762569_1280.jpg');">
+      <span>MAIN MEAL TIME</span>
+    </a>
+
+    <a class="card" href="pizza.html" style="background-image:url('https://cdn.pixabay.com/photo/2017/12/09/08/18/pizza-3007395_1280.jpg');">
+      <span>PIZZA (7 INCH)</span>
+    </a>
+
+    <a class="card" href="sandwiches.html" style="background-image:url('https://cdn.pixabay.com/photo/2016/03/05/20/07/appetizer-1238615_1280.jpg');">
+      <span>SANDWICHES</span>
+    </a>
+
+    <a class="card" href="burgers.html" style="background-image:url('https://cdn.pixabay.com/photo/2014/10/23/18/05/bread-500874_1280.jpg');">
+      <span>BURGERS</span>
+    </a>
+
+    <a class="card" href="siders.html" style="background-image:url('https://cdn.pixabay.com/photo/2022/07/28/14/35/fries-7350109_1280.jpg');">
+      <span>SIDERS</span>
+    </a>
+
+    <a class="card" href="shakes.html" style="background-image:url('https://cdn.pixabay.com/photo/2016/11/18/16/21/chocolate-1835436_1280.jpg');">
+      <span>SHAKES</span>
+    </a>
+
+  </div>
+</div>
+
+<footer>
+  <h2>“Good Food is Good Mood”</h2>
+  <p>
+    Crafted with love and excellence.<br>
+    Thank you for visiting Hoggeterians.<br><br>
+    <strong>Founder: Mr. Sumit Tank</strong>
+  </p>
+</footer>
+
+</body>
+</html>
